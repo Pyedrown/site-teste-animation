@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, ul {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+}
+
+main, ul {
+    align-items: center;
+}
+
+header {
+    align-items: flex-end;
+}
+
+li > a, button > p {
+    color: white;
+}
+
+li > a {
+    margin: 20px;
+    padding: 10px;
+    transition: all 1s;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li > a:hover {
+    border: 2px solid white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: none;
+}
+
+.animation-font-size {
+    animation: font-size 10s
+}
+
+@keyframes font-size {
+    0% {
+        font-size: 20px;
+    }
+    50% {
+        font-size: 50px;
+    }
+    100% {
+        font-size: 20px;
+    }
+}
+
+.animation-rotation {
+    animation: rotate 10s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animation {
+    animation: arco-iris 10s;
+}
+
+@keyframes arco-iris {
+    0% {
+        background-color: aquamarine;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: red;
+    }
+    75% {
+        background-color: yellow
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+button {
+    border: none;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+button > p {
+    margin: 0;
+    font-size: 25px;
+}
+
+header, footer {
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
